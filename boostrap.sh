@@ -8,7 +8,7 @@ echo $arch
 
 if  [[ "$os_version" == "Ubuntu 20.04"* ]] && [[ $arch == "arm64"* ]] ;
 then
-    sudo apt install qtcreator
+    sudo apt install qtcreator -y
     cd /tmp
     wget -O libROSProjectManager.so https://github.com/CiRA-AMI/cira-ros-qt-creator-plugin/raw/main/arm64/ubuntu_20.04/libROSProjectManager.so
     sudo cp -r -v libROSProjectManager.so /usr/lib/aarch64-linux-gnu/qtcreator/plugins/
