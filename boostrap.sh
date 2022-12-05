@@ -18,4 +18,6 @@ then
     cp -r CiRA_CORE_Dev_Template ~/
 fi
 
+echo "****************************"
 echo "cira_ros_qt_creator_plugin install complete"
+echo "****************************"
