@@ -13,6 +13,7 @@ then
     wget -O libROSProjectManager.so https://github.com/CiRA-AMI/cira-ros-qt-creator-plugin/raw/main/arm64/ubuntu_20.04/libROSProjectManager.so
     sudo cp -rf -v libROSProjectManager.so /usr/lib/aarch64-linux-gnu/qtcreator/plugins/
     
+    if [ -d CiRA_CORE_Dev_Template ]; then rm -Rf CiRA_CORE_Dev_Template*; fi
     wget -O CiRA_CORE_Dev_Template.zip https://github.com/CiRA-AMI/cira-ros-qt-creator-plugin/raw/main/template/CiRA_CORE_Dev_Template.zip
     unzip CiRA_CORE_Dev_Template.zip
     
